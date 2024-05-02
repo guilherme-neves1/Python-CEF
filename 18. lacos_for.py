@@ -69,4 +69,43 @@ for letra in nome:
 
 print()
 
+# BIBLIOTECA
+cliente = {'nome': 'José', 'idade': '31', 'cidade': 'Brasília', 'UF': 'DF'}
+for chave in cliente:
+  print (chave + ': ' + cliente[chave])
+
+print()
+
+# LAÇOS ANINHADOS
+# Um laço aninhado é um laço que ocorre dentro de outro laço
+
+minha_lista = []
+for x in [20, 40, 60]:
+  for y in [2, 4, 6]:
+    minha_lista.append(x * y)
+print(minha_lista) 
+
+print()
+
+lista_numeros = [1, 2, 3]
+lista_letras = ['a', 'b', 'c']
+for numero in lista_numeros:
+  print(numero)
+  for letra in lista_letras:
+    print(letra)
+
+print()
+
+lista_de_listas = [['cavalo', 'vaca', 'gato'],[0, 1, 2],[9.9, 8.8, 7.7]]
+for lista in lista_de_listas:
+  print(lista)
+
+print()
+
+lista_de_listas = [['cavalo', 'vaca', 'gato'],[0, 1, 2],[9.9, 8.8, 7.7]]
+for lista in lista_de_listas:
+  for item in lista:
+    print(item)
+
+print()
 
