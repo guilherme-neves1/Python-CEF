@@ -95,7 +95,7 @@ print()
 # if __name__ == '__main__':
 # Código a ser executado quando este for o programa principal
 
-nome = str(input('Digite seu nome: '))
+# nome = str(input('Digite seu nome: '))
 
 def tem_vogal():
   if set('aeiou').intersection(nome.lower()):
@@ -107,17 +107,49 @@ def imprime_letras():
   for letra in nome:
     print(letra)
 
-def main():
-  tem_vogal()
-  imprime_letras()
+# def main():
+#   tem_vogal()
+#   imprime_letras()
 
-if __name__ == '__main__':
-  main()
+# if __name__ == '__main__':
+#   main()
 
 print()
 # DESAFIO
+# 1. Crie uma função que imprime "Olá <nome>", em que <nome> é um parâmetro da função.
+# nome = str(input("Digite seu nome: "))
 
+def saudar(nome):
+  print("Olá " + nome)
 
+saudar("Guilherme")
 
+print()
+# 2. Crie uma função chamada ehPar que devolve True se um número passado como argumento for par ou False se for ímpar.
+# def ehPar(x):
+#   if x % 2 == 0:
+#     print("É par")
+#   else:
+#     print("É ímpar")
 
+# ehPar(5)
 
+def ehPar(numero):
+  return numero % 2 == 0
+
+print(ehPar(136))
+
+print()
+# 3. Usando a instrução if __name__ == '__main__', crie um programa que contém uma função chamada IMC, que recebe os dados de altura e peso do usuário e retorna seu IMC. A função main() deverá receber os dados como entrada do usuário, acionar a função IMC e imprimir a resposta.
+
+def imc(altura, peso):
+  return peso / (altura ** 2)
+
+def main():
+  altura = float(input('Digite sua altura: '))
+  peso = float(input('Digite seu peso: '))
+  imc_usuario = imc(altura, peso)
+  print("Seu imc é {}".format(imc_usuario))
+
+if __name__ == '__main__':
+  main()
