@@ -109,3 +109,81 @@ for lista in lista_de_listas:
 
 print()
 
+# BREAK, CONTINUE e PASS
+# BREAK
+numero = 0
+for numero in range(10):
+  numero = numero + 1
+  print(numero)
+  if numero == 5:
+    break
+print('Fora do laço, BREAK')
+
+print()
+
+# CONTINUE
+numero = 0
+for numero in range(10):
+  numero += 1
+  if numero == 5:
+    continue
+  print(numero)
+print('Fora do laço, CONTINUE')
+
+print()
+
+#PASS
+numero = 0
+for numero in range(10):
+  numero = numero + 1
+  if numero == 5:
+    pass
+  print(numero)
+print('Fora do laço')
+
+print()
+
+# DESAFIO
+# 1. Crie um laço for que imprima os valores de 0 a 9.
+
+for i in range(0, 10):
+  print(i)
+
+print()
+# 2. Crie um laço for que imprima os valores de 9 a 0 reduzindo 2 unidades por vez.
+for i in range (9, 0, -2):
+  print(i)
+
+print()
+# 3. Crie um laço for que imprime a lista ['joao', 'maria', 'pedro', 'paulo'] em ordem inversa.
+nomes = ['joao', 'maria', 'pedro', 'paulo']
+for i in range(len(nomes)-1, -1, -1):
+  print(nomes[i])
+  print(i)
+
+# 4. Usando laços for aninhados, imprima a tabuada de 0 a 5.
+
+# tabuada = []
+# for x in [1, 2, 3, 4, 5]:
+#   for y in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]:
+#     tabuada.append(x * y)
+
+# print(tabuada)
+
+for i in range(11):
+  for j in range(11):
+    print("{} * {} = {}".format(i, j, i*j))
+
+print()
+
+# 5. Crie um laço for que itera de 1 a 10 porém só imprime os números pares usando a instrução continue.
+
+# for i in range(11):
+#   if i % 2 == 0:
+#     print(i)
+#   continue
+
+for i in range(11):
+  if i % 2 != 0:
+    continue
+  print("{} é par".format(i))
