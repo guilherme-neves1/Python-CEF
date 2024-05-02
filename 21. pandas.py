@@ -57,6 +57,3 @@ print()
 # III. Panel: Um Panel é uma estrutura de dados tridimensional. Os termos “Panel data” e “dados longitudinais” são usados ​​intercambiavelmente. No entanto, a partir da versão 0.20.0 do pandas, o suporte para o Panel está descontinuado e não é mais recomendado para uso. Em vez disso, é preferível usar estruturas MultiIndex DataFrame para manipulação de dados tridimensionais.
 # pandas.Panel(data, items, major_axis, minor_axis, dtype, copy)
 # EM DESUSO
-
-
-
